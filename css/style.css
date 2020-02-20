@@ -636,12 +636,13 @@ p {
     }
 }
 
-@media(max-width: 486px) {
+@media(max-width: 502px) {
     .portfolio__item {
         width: 100%;
+        margin-right: 0;
     }
 
-    .portfolio__item:nth-child(2n) {
-        margin-right: 1px;
+    .portfolio__item:nth-child(3n) {
+        margin-right: 0px;
     }
 }
