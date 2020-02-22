@@ -370,7 +370,7 @@ p {
 }
 
 .page-download {
-    padding: 100px 0;
+    padding: 100px 15px;
 }
 
 .page-download .container {
@@ -696,5 +696,11 @@ p {
 @media(max-width:446px) {
     .footer__text {
         padding: 0 17%;
+    }
+}
+
+@media(max-width: 671px) {
+    .page-download__title {
+        line-height: 36px;
     }
 }
