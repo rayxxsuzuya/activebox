@@ -164,7 +164,7 @@ p {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 24.96%;
+    width: 24.95%;
     margin-bottom: 1px;
     margin-right: 1px;
 }
@@ -612,6 +612,24 @@ p {
     .features__item {
         width: 100%;
         padding: 0 25%;
+    }
+}
+
+@media(max-width: 1476px) {
+    .portfolio__item {
+        width: 24.94%;
+    }
+}
+
+@media(max-width: 1226px) {
+    .portfolio__item {
+        width: 24.93%;
+    }
+}
+
+@media(max-width: 1072px) {
+    .portfolio__item {
+        width: 24.92%;
     }
 }
 
