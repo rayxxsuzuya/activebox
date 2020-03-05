@@ -4,39 +4,42 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Описание страницы">
 	<title>ActiveBox</title>
 	<link href="https://fonts.googleapis.com/css?family=Cardo:400i|Open+Sans:400,700|Raleway:300,400,600,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://kit.fontawesome.com/c02b43b63b.js" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="header__inner">
+			<div class="header__inner" id="header-inner">
 				<div class="header__logo">
 					<img src="img/header-logo.png" alt="">
 				</div>
-				<nav class="nav">
-					<a href="" class="nav__link">Features</a>
-					<a href="" class="nav__link">Works</a>
-					<a href="" class="nav__link">Our Team</a>
-					<a href="" class="nav__link">Testimonials</a>
-					<a href="" class="nav__link">Download</a>
+				<nav class="nav" id="nav">
+					<a href="" class="nav__link" data-scroll="#nav-features">Features</a>
+					<a href="" class="nav__link" data-scroll="#nav-works">Works</a>
+					<a href="" class="nav__link" data-scroll="#nav-team">Our Team</a>
+					<a href="" class="nav__link" data-scroll="#nav-testimonials">Testimonials</a>
+					<a href="" class="nav__link" data-scroll="#nav-download">Download</a>
 				</nav>
-				<div class="burger">
+				<div class="burger" id="navButton">
 					<i class="fas fa-bars nav-burger"></i>
 				</div>
 			</div>
-			<div class="header-intro">
+			<div class="header-intro" id="header-intro">
 				<h1 class="intro__title">Your Favorite One Page Multi Purpose Template</h1>
 				<p class="intro__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna
 				vel scelerisque nisl consectetur et.</p>
-				<a href="" class="btn btn--red">Find Out More</a>
+				<a href="" class="btn btn--red" id="buttn">Find Out More</a>
 			</div>
 		</div>
 	</header>
-	<section class="page-features">
+	<section class="page-features" id="nav-features">
 		<div class="container">
 			<div class="features__item">
 				<img src="img/page-features-img-1.png" alt="" class="features__icon">
@@ -70,7 +73,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="page-portfolio">
+	<section class="page-portfolio" id="nav-works">
 		<div class="portfolio__item" style="background-image: url(img/page-portfolio-img-1.jpg);">
 			<div class="portfolio__inner">
 				<div class="portfolio__text">
@@ -136,7 +139,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="page-team">
+	<section class="page-team" id="nav-team">
 		<div class="container">
 			<div class="page-team__inner">
 				<div class="page-team__item">
@@ -186,20 +189,35 @@
 			</div>
 		</div>
 	</section>
-	<section class="page-slider">
+	<section class="page-slider" id="nav-testimonials">
 		<div class="container">
-			<div class="page-slider__item">
-				<div class="page-slider__photo">
-					<img src="img/page-slider-img.jpg" alt="" class="page-slider__img">
+			<div class="reviews__slider" id="reviewsSlider">
+				<div class="slider-item">
+					<div class="page-slider__item">
+						<div class="page-slider__photo">
+							<img src="img/page-slider-img.jpg" alt="" class="page-slider__img">
+						</div>
+						<div class="page-slider__content">
+							<p class="page-slider__review">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
+							<p class="page-slider__author">Susan Sims, Interaction Designer at XYZ</p>
+						</div>
+					</div>
 				</div>
-				<div class="page-slider__content">
-					<p class="page-slider__review">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
-					<p class="page-slider__author">Susan Sims, Interaction Designer at XYZ</p>
+				<div class="slider-item">
+					<div class="page-slider__item">
+						<div class="page-slider__photo">
+							<img src="img/page-slider-img.jpg" alt="" class="page-slider__img">
+						</div>
+						<div class="page-slider__content">
+							<p class="page-slider__review">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint vero ipsa quod quidem itaque debitis. Modi earum, eius illum maiores dignissimos facere laudantium saepe culpa quasi similique odit quo ab.</p>
+							<p class="page-slider__author">Susan Sims, Interaction Designer at XYZ</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="page-download">
+	<section class="page-download" id="nav-download">
 		<div class="container">
 			<h2 class="page-download__title">Are You Ready to Start? Download Now For Free!</h2>
 			<p class="page-download__subtitle">Fusce dapibus, tellus ac cursus commodo</p>
@@ -235,5 +253,8 @@
 			<p class="footer__copy">Made with love  <span class="footer__span">by Kamal Chaneman</span></p>
 		</div>
 	</footer>
+
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>
